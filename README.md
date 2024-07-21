@@ -34,3 +34,26 @@
 
 - Any language, any platform
 - One of the above problems or both, if you feel like it.
+
+## Solution Overview
+
+The "Parse Fixed Width File" problem has been successfully addressed. Follow the instructions below to run the solution and execute the test cases.
+
+### Running the Solution
+
+1. **Navigate to the Repository Root Directory:**
+   Ensure you are in the repository's root directory. This is necessary for the Docker commands to function correctly.
+
+2. **Start the Solution:**
+   Use the following command to start the solution:
+   ```bash
+   docker compose up task
+   ```
+
+### Running Tests and Generating Reports
+
+1. **Execute Test Cases:**
+   To run the test cases and generate an HTML report, use:
+   ```bash
+   docker compose up test
+   ```

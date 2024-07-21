@@ -1,0 +1,16 @@
+services:
+  task:
+    image: python:3.12.3-slim
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    working_dir: /code/scripts
+    command: python parse_fixed_width_file.py --row_count 10000000
+
+  test:
+    extends:
+      service: task
+    command: ../entry_point.sh
+
