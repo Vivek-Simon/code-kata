@@ -47,7 +47,7 @@ def test_generate_fixed_width_file():
     }
     tmp_file_name = generate_fixed_width_file(data_to_process, spec_data)
     try:
-        with open(tmp_file_name, 'r') as file:
+        with open(tmp_file_name, 'r', encoding='utf-8') as file:
             # Read all lines from the file
             lines = file.readlines()
         # Check if all lines have exactly 15 characters (excluding newline)
